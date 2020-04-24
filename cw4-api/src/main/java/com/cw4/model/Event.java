@@ -11,9 +11,9 @@ import javax.persistence.Table;
 @Table(name = "events")
 public class Event {
 
-	public long id;
-	public String name;
-	public String type;
+	private long id;
+	private String name;
+	private String type;
 
 	public Event() {
 		super();
