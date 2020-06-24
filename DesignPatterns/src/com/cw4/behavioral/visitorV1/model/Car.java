@@ -6,7 +6,7 @@ public class Car {
 	CarElement[] elements;
 
     public CarElement[] getElements() {
-        return elements.clone(); // Retourne une copie du tableau de références
+        return elements.clone();
     }
 
     public Car() {
@@ -16,7 +16,8 @@ public class Car {
                 new Wheel("back left"),
                 new Wheel("back right"),
                 new Body(),
-                new Engine()
+                new Engine(),
+                new Light()
             };
     }
 }

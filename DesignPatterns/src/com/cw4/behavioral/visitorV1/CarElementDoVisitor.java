@@ -3,6 +3,7 @@ package com.cw4.behavioral.visitorV1;
 import com.cw4.behavioral.visitorV1.model.Body;
 import com.cw4.behavioral.visitorV1.model.Car;
 import com.cw4.behavioral.visitorV1.model.Engine;
+import com.cw4.behavioral.visitorV1.model.Light;
 import com.cw4.behavioral.visitorV1.model.Wheel;
 
 public class CarElementDoVisitor implements CarElementVisitor {
@@ -26,6 +27,10 @@ public class CarElementDoVisitor implements CarElementVisitor {
         }
         System.out.println("Started car");
     }
+
+	public void visit(Light light) {
+		System.out.println("Trun on the light");
+	}
 
 
 }
